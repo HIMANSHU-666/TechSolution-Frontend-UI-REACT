@@ -1,0 +1,151 @@
+@import "./colors.scss";
+
+@media screen and (max-width: 820px) {
+  .home4 {
+    > div {
+      width: 50%;
+    }
+  }
+
+  .contact {
+    > main {
+      height: 35rem;
+      width: 70%;
+      padding: 2rem;
+
+      > form {
+        width: 90%;
+        position: relative;
+        right: 3rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .navbar {
+    padding: 0.2rem;
+
+    > h1 {
+      display: none;
+    }
+
+    > main {
+      width: 100%;
+      font-size: 0.7rem;
+      font-weight: bold;
+    }
+  }
+  .home {
+    > main {
+      text-align: center;
+      > h1 {
+        font: bolder 2.2rem $text1;
+      }
+    }
+    &::before {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background: no-repeat center/auto url("../assets/1.png");
+      filter: blur(4px);
+      border-radius: 0 0 40px 40px;
+    }
+  }
+  .home2 {
+    display: flex;
+    flex-direction: column;
+
+    > img {
+      // border: 2px solid red;
+      width: 100%;
+    }
+    > div {
+      width: 100%;
+
+      > p {
+        font-size: 1rem;
+      }
+    }
+  }
+  .home3 {
+    // border: 2px solid red;
+    height: 100vh;
+    > div {
+      border-radius: 1rem;
+      height: 60vh;
+      width: 100%;
+      padding: 1rem;
+      text-align: center;
+
+      > h1 {
+        width: 75%;
+        padding: 0 0.5rem;
+      }
+      > p {
+        padding: 2rem 1rem;
+      }
+    }
+  }
+  .home4 {
+    display: flex;
+    justify-content: center;
+
+    > div {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      border-radius: 10px;
+    }
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 300px;
+    text-align: center;
+    > div > div > a {
+      font: bolder 1.2rem $text1;
+      margin: 0.2rem 0;
+    }
+  }
+  .contact {
+    
+    height: 80vh;
+
+    > main {
+      
+      width: 100%;
+      border-radius: 10px;
+      text-align: center;
+      padding: 3rem 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      > form {
+        position: relative;
+        padding-right: 1rem;
+        left: 0;
+        width: 100%;
+
+        > div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+
+          > label{
+            margin-right: 1.3rem;
+          }
+        }
+      }
+    }
+  }
+  .car{
+    height: 50vh;
+  }
+}
